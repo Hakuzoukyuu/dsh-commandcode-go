@@ -1,0 +1,53 @@
+{
+  "name": "dsh-commandcode-go",
+  "version": "0.2.1",
+  "description": "Use a Command Code Go subscription from DeepSeek Harness through the Command Code CLI alpha transport. Unofficial; not affiliated with Command Code.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./config": "./lib/config.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "command-code",
+    "commandcode",
+    "llm"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0",
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakuzoukyuu/dsh-commandcode-go.git"
+  },
+  "homepage": "https://github.com/Hakuzoukyuu/dsh-commandcode-go#readme",
+  "bugs": {
+    "url": "https://github.com/Hakuzoukyuu/dsh-commandcode-go/issues"
+  }
+}
