@@ -181,6 +181,9 @@ cd dsh-commandcode-go
 node --test
 ```
 
+仓库自带 GitHub Actions 工作流（目前手动触发：`workflow_dispatch`），它只负责跑同一套
+`node --test`，不参与插件运行。本地测试才是发布前的判据。
+
 测试覆盖：
 
 - Config 默认值、secret/volatile schema、URL/plan 校验；

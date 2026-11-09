@@ -1,9 +1,11 @@
 name: test
 
+# GitHub Actions is currently locked at the account level ("account is locked
+# due to a billing issue"), so pushes cannot start a runner. Keep the workflow
+# runnable on demand; switch `on:` back to push/pull_request once the lock is
+# lifted.
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   node:
