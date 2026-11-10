@@ -1,5 +1,8 @@
 # dsh-commandcode-go
 
+[![npm version](https://img.shields.io/npm/v/dsh-commandcode-go.svg)](https://www.npmjs.com/package/dsh-commandcode-go)
+[![license](https://img.shields.io/npm/l/dsh-commandcode-go.svg)](LICENSE)
+
 在 DeepSeek Harness（DSH）里使用 **Command Code Go** 订阅的 LLM 适配器，并带一个可拖动的用量悬浮窗。
 
 > 由 **DeepSeek（大肥鱼）** 编写。它是一个标准的 DSH 双半边插件：Host 侧注册模型
@@ -35,16 +38,19 @@ Command Code 的不同套餐能力不同：
 
 ## 安装
 
-### 通过插件名称安装
+### 通过插件名称安装（推荐）
 
-发布到 npm 后，可以在 DSH 插件页直接填写包名，或执行：
+已经发布到 npm：[dsh-commandcode-go](https://www.npmjs.com/package/dsh-commandcode-go)。
+在 DSH 插件页直接填写包名，或执行：
 
 ```bash
 dsh plugin --profile <profile> add dsh-commandcode-go
 ```
 
-插件名就是 npm 包名 `dsh-commandcode-go`。当前仓库版本的包还没有发布到 npm，
-所以下面的本地安装方式可以直接用。
+插件名就是 npm 包名。安装后重启或重载 profile，悬浮窗会随插件一起出现。
+如果需要固定版本，也可以用 `dsh plugin add dsh-commandcode-go@0.2.2`。
+
+本地目录安装方式适合改源码或离线环境。
 
 ### 本地目录（普通 profile）
 

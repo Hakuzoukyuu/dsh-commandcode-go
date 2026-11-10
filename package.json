@@ -1,6 +1,6 @@
 {
   "name": "dsh-commandcode-go",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Use a Command Code Go subscription from DeepSeek Harness through the Command Code CLI alpha transport. Unofficial; not affiliated with Command Code.",
   "type": "module",
   "main": "lib/index.js",
